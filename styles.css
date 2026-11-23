@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2ecaf;
+    color: #593703;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #593703;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+#cookbook button {
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: rgb(203, 203, 197);
+    background-color: #593703;
+    border: 1px solid #593703;
+    margin-right: 10px;
+}
+
+#posts-container p {
+    white-space: pre-wrap;
+}
+
+img.post-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.post-emoji {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
