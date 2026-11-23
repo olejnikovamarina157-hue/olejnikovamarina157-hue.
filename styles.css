@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    img { max-width: 100%; height: auto; }
 }
 
 body {
@@ -61,3 +62,18 @@ img.post-img {
     width: 30px;
     height: 30px;
 }
+    /* Десктоп (базовые стили) */
+    .menu { display: flex; gap: 40px; }
+    .card { width: 300px; float: left; }
+
+    /* Планшеты (от 768px) */
+    @media (max-width: 960px) {
+      .card { width: 48%; }
+    }
+
+    /* Смартфоны (от 320px до 767px) */
+    @media (max-width: 767px) {
+      .menu { flex-direction: column; gap: 15px; }
+      .card { width: 100%; float: none; margin-bottom: 20px; }
+    }
+    
