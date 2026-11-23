@@ -74,6 +74,9 @@ img.post-img {
     /* Смартфоны (от 320px до 767px) */
     @media (max-width: 767px) {
       .menu { flex-direction: column; gap: 15px; }
-      .card { width: 100%; float: none; margin-bottom: 30px; }
+      .card { width: 100%; float: none; margin-bottom: 20px; }
     }
-    
+    .knopki-konteiner {
+  display: flex;
+  gap: 16px; /* Расстояние между кнопками */
+}
