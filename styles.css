@@ -43,7 +43,7 @@ nav a:hover {
     color: rgb(203, 203, 197);
     background-color: #593703;
     border: 1px solid #593703;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 #posts-container p {
@@ -76,7 +76,3 @@ img.post-img {
       .menu { flex-direction: column; gap: 15px; }
       .card { width: 100%; float: none; margin-bottom: 20px; }
     }
-    .knopki-konteiner {
-  display: flex;
-  gap: 16px; /* Расстояние между кнопками */
-}
