@@ -43,7 +43,6 @@ nav a:hover {
     color: rgb(203, 203, 197);
     background-color: #593703;
     border: 1px solid #593703;
-    margin-right: 20px;
 }
 
 #posts-container p {
@@ -79,7 +78,7 @@ img.post-img {
 .recipe-categories {
   display: flex;
   flex-wrap: wrap; /* Позволяет кнопкам переноситься на новую строку */
-  gap: 20px; /* Расстояние между кнопками по горизонтали и вертикали */
+  gap: 35px; /* Расстояние между кнопками по горизонтали и вертикали */
   justify-content: center; /* Выравнивание по центру */
 }
 
