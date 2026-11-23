@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>От каюты до плиты - Кок Кокоша</title>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Камбуз</title>
+    <!-- Браузер берет файл styles.css из той же папки, где лежит html -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+    <!-- Весь ваш контент страницы -->
+    
+    <!-- Браузер берет файл scripts.js из той же папки -->
+    <script src="scripts.js" defer></script> 
+</body>
+</html>
+<body>
+<div class="container">
+    <!-- Главная страница -->
+    <h1 id="homepage">Камбуз</h1>
+    <p>"Пока капитан управляет судном, я управляю его настроением"</p>
+    <p>Осторожно, потекут слюнки🩶
+    <p>Всем любителям морской эстетики и вкусной еды НЕОБХОДИМ этот сайт !!!
+    <p>В блоге «От каюты до плиты — Кок Кокоша» я делюсь проверенными рецептами, вяжу еду-сувениры и рассказываю, как с каждым днём становлюсь ближе к работе корабельным поваром 
+<p>Со мной не соскучишься!
+
+    <!-- Навигационное меню -->
+    <nav>
+        <ul>
+            <li><a href="#homepage">Камбуз</a></li>
+            <li><a href="#recipes">Поваренная книга</a></li>
+            <li><a href="#random-recipe">Открыть случайный рецепт</a></li>
+            <li><a href="#blog">Блог</a></li>
+        </ul>
+    </nav>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Меню рецептов</title>
+    <style>
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <section id="cookbook">
+        <h2>Поваренная книга</h2>
+        <div class="recipe-categories">
+            <button onclick="toggleMenu('hot-menu')">Горячие блюда</button>
+            <button onclick="toggleMenu('sweets-menu')">Сладости</button>
+            <button onclick="toggleMenu('snacks-menu')">Закуски</button>
+            <button onclick="toggleMenu('salads-menu')">Салаты</button>
+            <button onclick="toggleMenu('sauces-menu')">Соусы</button>
+        </div>
+        
+        <!-- Контейнеры для пунктов меню -->
+        <div id="hot-menu" class="hidden">
+        <br><!-- Пространство над кнопками -->
+            <button onclick="showRecipe('soup')">Супы</button>
+            <button onclick="showRecipe('meat')">Мясо</button>
+            <button onclick="showRecipe('fish')">Рыба</button>
+            <button onclick="showRecipe('hearty')">Сытная выпечка</button>
+        </div>
+        
+        <div id="sweets-menu" class="hidden">
+        <br><!-- Пространство над кнопками -->
+            <button onclick="showRecipe('cake')">Торты и пирожные</button>
+            <button onclick="showRecipe('cookies')">Печенье</button>
+            <button onclick="showRecipe('candies')">Конфеты и мармелад</button>
+            <button onclick="showRecipe('bakery')">Сладкие пироги, пирожки и булочки</button>
+        </div>
+        
+        <div id="sauces-menu" class="hidden">
+        <br><!-- Пространство над кнопками -->
+            <button onclick="showRecipe('sharp')">Острые</button>
+            <button onclick="showRecipe('sour')">Кисло-сладкие</button>
+        </div>
+
+        <!-- Другие пункты меню -->
+        <div id="snacks-menu" class="hidden"></div>
+        <div id="salads-menu" class="hidden"></div>
+    </section>
+</div>
+
+<script>
+// Общие элементы страницы
+const menuItems = ['hot-menu', 'sweets-menu', 'snacks-menu', 'salads-menu', 'sauces-menu'];
+
+// Метод для отображения указанного меню и скрытия остальных
+function toggleMenu(menuId) {
+    const currentMenu = document.getElementById(menuId);
+    
+    // Закрываем все остальные меню кроме текущего
+    for (let i = 0; i < menuItems.length; i++) {
+        let item = document.getElementById(menuItems[i]);
+        if (item.id !== menuId) {
+            item.classList.add('hidden'); // Убираем видимость у всех других элементов
+        }
+    }
+    
+    // Переключаем состояние выбранного элемента
+    if (currentMenu.classList.contains('hidden')) {
+        currentMenu.classList.remove('hidden');
+    } else {
+        currentMenu.classList.add('hidden');
+    }
+}
+
+// Вспомогательная функция showRecipe для демонстрации выбора рецепта
+function showRecipe(recipeType) {
+    alert(`Вы выбрали рецепт категории ${recipeType}`);
+}
+</script>
+</div>
+</body>
+</html>
