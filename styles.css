@@ -76,3 +76,20 @@ img.post-img {
       .menu { flex-direction: column; gap: 15px; }
       .card { width: 100%; float: none; margin-bottom: 20px; }
     }
+.recipe-categories {
+  display: flex;
+  flex-wrap: wrap; /* Позволяет кнопкам переноситься на новую строку */
+  gap: 20px; /* Расстояние между кнопками по горизонтали и вертикали */
+  justify-content: center; /* Выравнивание по центру */
+}
+
+/* Ваши стили для самих кнопок остаются прежними */
+button {
+  background-color: #5a3e1a; 
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+}
